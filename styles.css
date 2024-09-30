@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     font-family:"Montserrat";
-    background: url('Images/background.jpg') no-repeat center center fixed;
+    background: url('imagenes/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
