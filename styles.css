@@ -1,30 +1,33 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: url('Images/background.jpg')no-repeat center center fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:"Montserrat";
+    background: url('imagenes/background.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6600; /* Franja naranja */
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.header img{
-    max-width: 100px;
+.header img {
+    max-width: 70px;
+    margin-right: 10px; /* Espacio entre el logo y el título */
 }
 
 .header h1 {
@@ -33,46 +36,42 @@ body {
 }
 
 .header span {
-    color: #ff6600;
+    color: #fff;
 }
 
-.form-cotainer {
-    background-color: rgba(255, 255, 255, a0.9);
+.form-container {
+    background-color: rgba(255, 255, 255, 0.623);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0, a0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+    margin-top: 20px; /* Espacio entre el formulario y el header */
 }
 
 h2 {
     text-align: center;
     margin-bottom: 20px;
-  
+    color: #ff6600;
+
 }
 
 form input {
-    width: auto;
+    width: 100%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-
 }
 
 button {
-    width: auto;
+    width: 100%;
     padding: 10px;
     background-color: #ff6600;
     color: white;
     cursor: pointer;
     margin-top: 10px;
-    border:none;
+    border: none;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #e65c00;
-
 }
 
 .google-signin {
@@ -80,14 +79,13 @@ button:hover {
     border: 1px solid #ccc;
     color: black;
     margin-top: 20px;
-
+    width: 100%;
 }
 
-p{
+p {
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
-
 }
 
 p a {
